@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="THKTLT_Lab10.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:THKTLT_Lab10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+        <TextBlock Grid.Row="3" Grid.Column="3" Text="?" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Tapped="TextBlock_Tapped"/>
+
+        <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal" Grid.ColumnSpan="2"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="timeTextBlock" Text="Start" HorizontalAlignment="Center"
+                    VerticalAlignment="Center" FontSize="40" Tapped="timeTextBlock_Tapped"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <TextBlock Text="High Score" HorizontalAlignment="Center"
+                       FontSize="40" Foreground="Red" VerticalAlignment="Center"/>
+            <TextBlock x:Name="highTextBlock" Text="" HorizontalAlignment="Center"
+                       FontSize="40" Foreground="Red" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
